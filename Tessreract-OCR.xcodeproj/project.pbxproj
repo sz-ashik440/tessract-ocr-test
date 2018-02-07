@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8E44743B6F3DA775AF93E6F /* Pods_Tessreract_OCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84F5CA98ED01343D890AD57 /* Pods_Tessreract_OCR.framework */; };
 		DA0DF59C202AE64D00F22293 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DF59B202AE64D00F22293 /* AppDelegate.swift */; };
 		DA0DF59E202AE64D00F22293 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0DF59D202AE64D00F22293 /* ViewController.swift */; };
 		DA0DF5A1202AE64D00F22293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0DF59F202AE64D00F22293 /* Main.storyboard */; };
 		DA0DF5A3202AE64D00F22293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0DF5A2202AE64D00F22293 /* Assets.xcassets */; };
 		DA0DF5A6202AE64D00F22293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0DF5A4202AE64D00F22293 /* LaunchScreen.storyboard */; };
+		DA0DF5AE202AE77100F22293 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0DF5AD202AE77100F22293 /* libz.tbd */; };
+		DA0DF5B0202B020600F22293 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = DA0DF5AF202B020600F22293 /* tessdata */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29592442E619FE93046C1430 /* Pods-Tessreract-OCR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tessreract-OCR.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tessreract-OCR/Pods-Tessreract-OCR.release.xcconfig"; sourceTree = "<group>"; };
+		C84F5CA98ED01343D890AD57 /* Pods_Tessreract_OCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tessreract_OCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0DF598202AE64D00F22293 /* Tessreract-OCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tessreract-OCR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0DF59B202AE64D00F22293 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA0DF59D202AE64D00F22293 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		DA0DF5A2202AE64D00F22293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA0DF5A5202AE64D00F22293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA0DF5A7202AE64D00F22293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA0DF5AD202AE77100F22293 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		DA0DF5AF202B020600F22293 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		FCBDAF9D09D51ABDFF9E3515 /* Pods-Tessreract-OCR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tessreract-OCR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tessreract-OCR/Pods-Tessreract-OCR.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0DF5AE202AE77100F22293 /* libz.tbd in Frameworks */,
+				C8E44743B6F3DA775AF93E6F /* Pods_Tessreract_OCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B265B0A1F6E9906120533186 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA0DF5AD202AE77100F22293 /* libz.tbd */,
+				C84F5CA98ED01343D890AD57 /* Pods_Tessreract_OCR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C146FC27586A4B94EF6208D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCBDAF9D09D51ABDFF9E3515 /* Pods-Tessreract-OCR.debug.xcconfig */,
+				29592442E619FE93046C1430 /* Pods-Tessreract-OCR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DA0DF58F202AE64D00F22293 = {
 			isa = PBXGroup;
 			children = (
 				DA0DF59A202AE64D00F22293 /* Tessreract-OCR */,
 				DA0DF599202AE64D00F22293 /* Products */,
+				C146FC27586A4B94EF6208D6 /* Pods */,
+				B265B0A1F6E9906120533186 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +84,7 @@
 		DA0DF59A202AE64D00F22293 /* Tessreract-OCR */ = {
 			isa = PBXGroup;
 			children = (
+				DA0DF5AF202B020600F22293 /* tessdata */,
 				DA0DF59B202AE64D00F22293 /* AppDelegate.swift */,
 				DA0DF59D202AE64D00F22293 /* ViewController.swift */,
 				DA0DF59F202AE64D00F22293 /* Main.storyboard */,
@@ -71,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA0DF5AA202AE64D00F22293 /* Build configuration list for PBXNativeTarget "Tessreract-OCR" */;
 			buildPhases = (
+				E7098B359111ABC1FCC8E6F7 /* [CP] Check Pods Manifest.lock */,
 				DA0DF594202AE64D00F22293 /* Sources */,
 				DA0DF595202AE64D00F22293 /* Frameworks */,
 				DA0DF596202AE64D00F22293 /* Resources */,
+				6514C1350E766E464732E9E1 /* [CP] Embed Pods Frameworks */,
+				C49C7623AB152D9B2941D91C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +158,67 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA0DF5A6202AE64D00F22293 /* LaunchScreen.storyboard in Resources */,
+				DA0DF5B0202B020600F22293 /* tessdata in Resources */,
 				DA0DF5A3202AE64D00F22293 /* Assets.xcassets in Resources */,
 				DA0DF5A1202AE64D00F22293 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6514C1350E766E464732E9E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tessreract-OCR/Pods-Tessreract-OCR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tessreract-OCR/Pods-Tessreract-OCR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C49C7623AB152D9B2941D91C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tessreract-OCR/Pods-Tessreract-OCR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7098B359111ABC1FCC8E6F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tessreract-OCR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA0DF594202AE64D00F22293 /* Sources */ = {
@@ -195,6 +284,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -252,6 +342,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -272,9 +363,11 @@
 		};
 		DA0DF5AB202AE64D00F22293 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCBDAF9D09D51ABDFF9E3515 /* Pods-Tessreract-OCR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JQJ2DWF33H;
 				INFOPLIST_FILE = "Tessreract-OCR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sz.Tessreract-OCR";
@@ -286,9 +379,11 @@
 		};
 		DA0DF5AC202AE64D00F22293 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29592442E619FE93046C1430 /* Pods-Tessreract-OCR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JQJ2DWF33H;
 				INFOPLIST_FILE = "Tessreract-OCR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sz.Tessreract-OCR";
